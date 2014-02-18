@@ -1,0 +1,15 @@
+# Eclipse bullshit
+.cproject
+.project
+.settings
+
+# autotools bullshit
+autom4te.cache
+depcomp
+install-sh
+Makefile.in
+missing
+config.guess
+config.sub
+config.status
+config.log
