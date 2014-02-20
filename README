@@ -1,12 +1,8 @@
 --- Introduction: ---
 
-This is basically the VXI11Discovery project at https://github.com/mgmarino/VXI11Discovery re-organized
-to have the code for discovery ov VXI11 devices and VXI11 devices handling altogether in the same project
-using autotools. 
+This is basically the VXI11Discovery project at https://github.com/mgmarino/VXI11Discovery re-organized to have the code for discovery and handling of VXI11 devices altogether in the same project using autotools. 
 
-VXI11 handling code itself that is included as a sub project of VXI11Discovery is a patched version of 
-Steve Sharples' VXI11 ethernet protocol library, availble at:
-
+VXI11 handling code itself that is included as a sub project of VXI11Discovery is a patched version of Steve Sharples' VXI11 ethernet protocol library, availble at:
 http://optics.eee.nottingham.ac.uk/vxi11/
 
 If you use Python code to access VXI11 instruments you may be interested in checking this Python native implementation:
