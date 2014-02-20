@@ -12,9 +12,6 @@ http://optics.eee.nottingham.ac.uk/vxi11/
 If you use Python code to access VXI11 instruments you may be interested in checking this Python native implementation:
 https://github.com/alexforencich/python-vxi11
 
-Note: the library is produced as only static. Shared libraries are not generated properly with the autotools 
-when part of the code is generated. This is the case here with rpcgen. lib/vxi11.x is the rpcgen source.
-
 Doxygen documentation may be found here: http://f4exb.free.fr/libvxi11/doc/html/
 
 

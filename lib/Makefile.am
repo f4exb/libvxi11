@@ -4,7 +4,8 @@ libvxi11_la_SOURCES = clnt_find_services.cc \
     vxi11_xdr.c \
     vxi11_clnt.c \
     vxi11_svc.c \
-    vxi11_user.cc
+    vxi11_server.c \
+    vxi11_user.cc 
 
 CLEANFILES = vxi11.h vxi11_svc.c vxi11_clnt.c vxi11_xdr.c
 
@@ -18,6 +19,9 @@ vxi11_clnt.c:
 	
 vxi11_svc.c:
 	$(RPCGEN) -M -m -o vxi11_svc.c $(top_srcdir)/lib/vxi11.x
+	
+vxi11_server.c:
+	$(RPCGEN) -M -Ss -o vxi11_server.c $(top_srcdir)/lib/vxi11.x
 	
 vxi11.h:	
 	$(RPCGEN) -M -h -o vxi11.h $(top_srcdir)/lib/vxi11.x
